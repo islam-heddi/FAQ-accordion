@@ -1,0 +1,79 @@
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+    src: url(./assets/fonts/static/WorkSans-SemiBold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-pink: hsl(275, 100%, 97%);
+    --color-grayish-purple: hsl(292, 16%, 49%);
+    --color-dark-purple: hsl(292, 42%, 14%);
+    --font-size-paragraph: 16px;
+}
+
+* {
+    font-family: "Work Sans";
+}
+
+body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat:repeat-x;
+    background-color: var(--color-light-pink);
+}
+
+section{
+    background-color: white;
+    padding: 30px;
+    max-width: 550px;
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title{
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    & > p {
+        color: var(--color-dark-purple);
+        font-weight: bold;
+    }
+}
+
+.title:hover {
+    cursor: pointer;
+    & > p {
+        color: var(--color-grayish-purple);
+    }
+}
+
+.content {
+    color: var(--color-grayish-purple);
+    display: none;
+}
+
+.minus {
+    display: none;
+}
