@@ -41,7 +41,7 @@ body {
 }
 
 section{
-    background-color: white;
+    background-color: var(--color-white);
     padding: 30px;
     max-width: 550px;
     border-radius: 12px;
