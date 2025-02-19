@@ -36,19 +36,20 @@
 
 body {
     background-image: url(./assets/images/background-pattern-desktop.svg);
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
     background-color: var(--color-light-pink);
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 section{
     background-color: var(--color-white);
     padding: 30px;
-    max-width: 550px;
     border-radius: 12px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    max-width: 40%;
+    width: 40%;
+
 }
 
 .title{
@@ -76,4 +77,8 @@ section{
 
 .minus {
     display: none;
+}
+
+h1 {
+    font-size: 40px;
 }
